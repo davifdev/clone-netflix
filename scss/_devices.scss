@@ -1,0 +1,19 @@
+.devices__content {
+    border-bottom: 5px solid $border-gray;
+   .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+   
+     h3 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+     }
+     p {
+        font-size: 1.5rem;
+        width: 600px;
+     }
+    
+   }
+}
