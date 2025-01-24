@@ -1,13 +1,12 @@
 .rodape__container {
-    color: $gray-login;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     .container {
+        color: $gray-login;
         margin-top: 4rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
-
         p {
             a {
                 color: $gray-login;;
@@ -17,7 +16,6 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
             ul {
                 list-style: none;
                 li {
