@@ -7,24 +7,31 @@
 $red: #C11119;
 $white: #fff;
 $gray: #e6e6e6;
-$gray-footer: #2e2e2e;
+$gray-footer: #5050509d;
 $border-gray: #232323;
-$dark-gray: #1a1914b9;
+$dark-gray: #1a14146f;
 $gray-hover: #414141;
+$gray-login: #8c8c8c;
 $background: #000;
+$blue: #017ede;
 
 body {
     font-family: 'Segoe UI', sans-serif;
     min-height: 100vh;
     background-color: $background;
     color: $white;
-    padding-bottom: 5rem;
 }
 
 img {
     display: block;
     width: 100%;  
 }
+
+.header__logo {
+    width: 148px;
+    height: 40px;
+}
+
 
 .container {
     width: 100%;
@@ -69,7 +76,6 @@ img {
 
 form {
     margin-top: 10px;
-   
     label {
         display: flex;
         align-items: center;
@@ -86,4 +92,14 @@ form {
         }
     }
 }
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
 
