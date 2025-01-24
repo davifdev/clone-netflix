@@ -72,6 +72,7 @@ img {
   padding: 5px 30px;
   color: $white;
   border-radius: 3px;
+  border: 1px solid $gray-login;
 }
 
 form {
@@ -88,7 +89,11 @@ form {
             color: $gray;
             border-radius: 3px;
             font-size: 18px;
-            border: 1px solid $gray;
+            border: 1px solid $gray-login;
+
+            &::placeholder {
+                color: $gray;
+            }
         }
     }
 }

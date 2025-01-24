@@ -1,5 +1,6 @@
 .rodape__container {
-   
+    color: $gray-login;
+    padding-bottom: 6rem;
     .container {
         margin-top: 4rem;
         display: flex;
@@ -9,7 +10,7 @@
 
         p {
             a {
-                color: $gray;
+                color: $gray-login;;
             }
         }
         .rodape__infos {
@@ -22,7 +23,7 @@
                 li {
                     margin-bottom: 1rem;
                     a {
-                        color: $gray;
+                        color: $gray-login;
                     }
                 }
             }
