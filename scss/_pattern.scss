@@ -7,6 +7,7 @@
 $red: #C11119;
 $white: #fff;
 $gray: #e6e6e6;
+$gray-footer: #2e2e2e;
 $border-gray: #232323;
 $dark-gray: #1a1914b9;
 $gray-hover: #414141;
@@ -17,7 +18,7 @@ body {
     min-height: 100vh;
     background-color: $background;
     color: $white;
-    padding-bottom: 500rem;
+    padding-bottom: 5rem;
 }
 
 img {
@@ -52,6 +53,18 @@ img {
     margin: 20px 0 30px 0;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.btn-select {
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+
+.input-select {
+  background: $dark-gray;;
+  padding: 5px 30px;
+  color: $white;
+  border-radius: 3px;
 }
 
 form {
