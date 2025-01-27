@@ -1,0 +1,104 @@
+@mixin btnConfig($bg-color, $font-color: $background) {
+    background: $bg-color;
+    display: flex;
+    color: $font-color;
+    justify-content: space-between;
+    align-items: center;
+    gap: .3rem;
+    padding: 1rem 4rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.movies__header {
+    background: url(../assets/imagens/filmes/banner1.png) no-repeat center center / cover;
+    background-attachment: fixed;
+    height: 80vh;
+    padding: 2rem;
+    .movies__header-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .movies__header-navigation {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            .movies__header-list {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                list-style: none;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        .movies__header-config {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    .movies__header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 4rem;
+
+        img {
+            width: 650px;
+            height: 260px;
+        }
+
+        .movies__header-description {
+            width: 450px;
+            font-size: 1.1rem;
+        }
+
+        .movies__header-button {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .btn-play {
+                @include btnConfig($gray);
+            }
+
+            .btn-info {
+                @include btnConfig($dark-gray, $white);
+            }  
+        }
+    }
+}
+
+.movies__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   margin-top: -55px;
+   padding: 1rem 4rem;
+    .movies__container-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .my-list {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+    }
+}
