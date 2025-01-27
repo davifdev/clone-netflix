@@ -39,7 +39,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-
+        padding: 0 1rem;
         .header__content-price {
             margin: 20px 0 30px 0;
             font-weight: bold;
@@ -48,9 +48,95 @@
         
         h2 {
             font-size: 3.5rem;
-            width: 600px;
+            width: 100%;
         }
-    }   
+    } 
+
+    @media (max-width: 1200px) {
+        .header__content {
+            h2 {
+                font-size: 3rem;
+            }
+            form {
+                label {
+                    input {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 990px) {
+        .header__content {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .header__content-price {
+                margin: 10px 0 20px 0;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            form {
+                label {
+                    input {
+                        width: 100%;
+                    }
+                    button {
+                        padding: 1.3rem 0;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header__content {
+            width: 100%;
+            h2 {
+                width: 100%;
+            }
+
+            .header__content-price {
+                font-weight: normal;
+            }
+
+            form {
+                width: 100%;
+                label {
+                    flex-direction: column;
+                    input {
+                        width: 80%;
+                    }
+                    button {
+                        width: 30%;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .header__navbar-language {
+            select {
+                display: none;
+            }
+            button {
+                width: 100%;
+                font-size: 1rem;
+            }
+        }
+
+        .header__content {
+            .header__content-price {
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 
