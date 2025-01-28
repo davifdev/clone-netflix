@@ -27,4 +27,17 @@
             }
         }
     }
+
+    @media (max-width: 990px) {
+        .rodape__infos {
+            flex-wrap: wrap;
+            align-items: center;
+            ul {
+                margin-bottom: 1rem;
+                div {
+                    display: flex;
+                }
+            }
+        }
+    }
 }
