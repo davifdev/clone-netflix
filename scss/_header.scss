@@ -15,6 +15,7 @@
         z-index: 1;
         background: linear-gradient(180deg, #000000 0%, rgba(0, 4, 7, 0) 100%);
         transform: rotate(180deg);
+        pointer-events: none;
     }
     
     .header__navbar {
@@ -53,44 +54,50 @@
     } 
 
     @media (max-width: 1200px) {
-        .header__content {
-            h2 {
-                font-size: 3rem;
-            }
-            form {
-                label {
-                    input {
-                        width: 400px;
+            .header__content {
+                h2 {
+                    font-size: 3rem;
+                }
+                form {
+                    label {
+                        input {
+                            width: 400px;
+                        }
                     }
                 }
             }
         }
-    }
 
     @media (max-width: 990px) {
-        .header__content {
-            h2 {
-                font-size: 2rem;
+            height: 50vh;
+            .header__logo {
+                width: 70%;
+                max-width: 148px;
             }
-
-            .header__content-price {
-                margin: 10px 0 20px 0;
-                font-weight: bold;
-                font-size: 1.2rem;
-            }
-
-            form {
-                label {
-                    input {
-                        width: 100%;
-                    }
-                    button {
-                        padding: 1.3rem 0;
-                        font-size: 1rem;
+            .header__content {
+                h2 {
+                    font-size: 2rem;
+                }
+    
+                .header__content-price {
+                    margin: 10px 0 20px 0;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+    
+                form {
+                    label {
+                        input {
+                            width: 100%;
+                        }
+                        button {
+                            padding: 1.3rem 0;
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
-        }
+        
     }
 
     @media (max-width: 768px) {

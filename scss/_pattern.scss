@@ -23,7 +23,7 @@ body {
 }
 
 .header__logo {
-    width: 80%;
+    width: 100%;
     max-width: 148px;
 }
 
@@ -101,8 +101,7 @@ form {
     font-size: 1rem;
 }
 
-
-.devices__container, .questions__container, .signature__container, .rodape__container {
+.questions__container, .signature__container, .rodape__container {
     display: none;
 }
 
