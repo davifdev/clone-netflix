@@ -23,18 +23,23 @@
      }
     }
 
+    @media (max-width: 1200px) {
+      .container {
+         h3 {
+            font-size: 2rem;
+         }
+         p {
+            font-size: 1.2rem;
+         }
+      } 
+    }
+
     @media (max-width: 990px) {
       .container {
          flex-direction: column;
          text-align: center;
          padding: 2rem 1rem;
-         h3 {
-            font-size: 1.5rem;
-         }
-         p {
-            font-size: 1rem;
-         
-         }
+        
       }
     }
 }
