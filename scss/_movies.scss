@@ -129,7 +129,7 @@
     }
 
     @media (max-width: 768px) {
-        height: 60vh;
+        height: 50vh;
         .movies__header-items {
             .movies__header-navigation {
                 .header__logo {
@@ -142,6 +142,7 @@
         }
 
         .movies__header-content {
+            padding: 1rem 0 0 0;
             img {
                 width: 60%;
             }
@@ -155,9 +156,9 @@
 }
 
 .movies__container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
    margin-top: -55px;
    padding: 1rem 4rem;
     .movies__container-list {
@@ -186,7 +187,7 @@
         }
     }
     @media (max-width: 768px) {
-     
+        padding: 1rem 1rem;
         .movies__container-list {
             .my-list {
                 img {
