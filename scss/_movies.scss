@@ -130,6 +130,8 @@
 
     @media (max-width: 768px) {
         height: 50vh;
+        background-position: center;
+        background-size: contain;
         .movies__header-items {
             .movies__header-navigation {
                 .header__logo {
