@@ -15,6 +15,16 @@
         width: 24px;
         height: 24px;
     }
+
+    @media (max-width: 990px) {
+        padding: .5rem;
+        font-size: .9rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: .4rem;
+        font-size: .7rem;
+    }
 }
 
 .movies__header {
@@ -83,6 +93,65 @@
             }  
         }
     }
+
+    @media (max-width: 990px) {
+        height: 70vh;
+        .movies__header-items {
+            .movies__header-navigation {
+                gap: 2rem;
+                .header__logo {
+                    width: 20%;
+                }
+
+                .movies__header-list {
+                    gap: 1.5rem;
+                    li {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            }
+
+        .movies__header-config {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }    
+
+        .movies__header-content {
+            .movies__header-description {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: 60vh;
+        .movies__header-items {
+            .movies__header-navigation {
+                .header__logo {
+                    width: 60%;
+                }
+                .movies__header-list {
+                    display: none;
+                }
+            }
+        }
+
+        .movies__header-content {
+            img {
+                width: 60%;
+            }
+            .movies__header-description {
+                width: 100%;
+                font-size: .8rem;
+            }
+        }
+      
+    }
 }
 
 .movies__container {
@@ -99,6 +168,31 @@
             display: flex;
             align-items: center;
             gap: .5rem;
+            overflow: hidden;
+        }
+    }
+
+    @media (max-width: 990px) {
+        margin-top: -50px;
+        .movies__container-list {
+            h2 {
+                font-size: 1rem;
+            }
+            .my-list {
+                img {
+                    width: 35%;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+     
+        .movies__container-list {
+            .my-list {
+                img {
+                    width: 50%;
+                }
+            }
         }
     }
 }
